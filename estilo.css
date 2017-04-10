@@ -1,0 +1,65 @@
+table{
+  margin: 0 auto;
+}
+.branco{
+  background-color: white;
+}
+.esp{
+      height: 80px;
+}
+.tab1{
+  margin: auto;
+  width: 900px;
+  text-align: center;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  font-family: arial, "open sans", sans-serif;
+  font-size: 25px;
+}
+.ass{
+  cursor: pointer;
+  height: 50px;
+  width:  50px;
+  text-align: center;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  font-family: arial, "open sans", sans-serif;
+  font-size: 16pt
+}
+td{
+  cursor: pointer;
+  height: 50px;
+  width:  50px;
+  text-align: center;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  font-family: arial, "open sans", sans-serif;
+  font-size: 16pt
+}
+.bord{
+  cursor: pointer;
+  height: 50px;
+  width:  50px;
+  border-color: white;
+}
+.meia{
+  background-color: #FF1493;
+}
+.inteira{
+  background-color: #FFFF00;
+}
+.rosa{
+  width: 35px;
+  height: 35px;
+}
+.amarelo{
+  width: 35px;
+  height: 35px;
+}
+.letras{
+  font-size: 22px;
+  font-family: arial, "open sans", sans-serif;
+}

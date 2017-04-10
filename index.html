@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <meta charset="utf-8">
+   <title>Seleção de assentos para compra de ingressos para Cinema</title>
+
+
+   <link rel="stylesheet" href="estilo.css">
+ </head>
+ <body>
+   <div class="tab1">TELA</div>
+   <div class="tab2" id="divTabela">
+   <table class="tabela">
+       <tbody>
+         <tr class="esp"></tr>
+         <tr>
+           <td class="bord">A</td>
+           <td class="bord"></td>
+           <td class="bord"></td>
+           <td class="bord"></td>
+           <td class="bord"></td>
+           <td class="bord"></td>
+           <td class="bord"></td>
+           <td class="bord"></td>
+           <div >
+           <td class ="ass">1</td>
+           <td class ="ass">2</td>
+           <td class ="ass">3</td>
+           <td class ="ass">4</td>
+           <td class ="ass">5</td>
+           <td class ="ass">6</td>
+           </div>
+           <td class="bord"></td>
+           <td class="bord"></td>
+           <td class="bord"></td>
+           <td class="bord"></td>
+           <td class="bord"></td>
+           <td class="bord">A</td>
+         </tr>
+         <tr>
+           <td class="bord">B</td>
+           <td class="bord"></td>
+           <td class="bord"></td>
+           <td class="bord"></td>
+           <div >
+           <td class="ass">1</td>
+           <td class="ass">2</td>
+           </div>
+           <td class="bord"></td>
+           <td class="bord"></td>
+           <div >
+           <td class="ass">3</td>
+           <td class="ass">4</td>
+           <td class="ass">5</td>
+           <td class="ass">6</td>
+           <td class="ass">7</td>
+           <td class="ass">8</td>
+           </div>
+           <td class="bord"></td>
+           <td class="bord"></td>
+           <div >
+           <td class="ass">9</td>
+           <td class="ass">10</td>
+           </div>
+           <td class="bord"></td>
+           <td class="bord">B</td>
+         </tr>
+         <tr>
+           <td class="bord">C</td>
+           <td class="bord"></td>
+           <div >
+           <td class="ass">1</td>
+           <td class="ass">2</td>
+           <td class="ass">3</td>
+           <td class="ass">4</td>
+           </div>
+           <td class="bord"></td>
+           <td class="bord"></td>
+           <div >
+           <td class="ass">5</td>
+           <td class="ass">6</td>
+           <td class="ass">7</td>
+           <td class="ass">8</td>
+           <td class="ass">9</td>
+           <td class="ass">10</td>
+           </div>
+           <td class="bord"></td>
+           <td class="bord"></td>
+           <div >
+           <td class="ass">11</td>
+           <td class="ass">12</td>
+           </div>
+           <td class="bord"></td>
+           <td class="bord">C</td>
+         </tr>
+         <tr>
+         <td class="bord">D</td>
+         <td class="bord"></td>
+           <div >
+           <td class="ass">1</td>
+           <td class="ass">2</td>
+           <td class="ass">3</td>
+           <td class="ass">4</td>
+           </div>
+           <td class="bord"></td>
+           <td class="bord"></td>
+           <div >
+           <td class="ass">5</td>
+           <td class="ass">6</td>
+           <td class="ass">7</td>
+           <td class="ass">8</td>
+           <td class="ass">9</td>
+           <td class="ass">10</td>
+           </div>
+           <td class="bord"></td>
+           <td class="bord"></td>
+           <div >
+           <td class="ass">11</td>
+           <td class="ass">12</td>
+           </div>
+           <td class="bord"></td>
+           <td class="bord">D</td>
+         </tr>
+         <tr>
+           <td class="bord">E</td>
+           <td class="bord"></td>
+           <div >
+           <td class="ass">1</td>
+           <td class="ass">2</td>
+           <td class="ass">3</td>
+           <td class="ass">4</td>
+           <td class="ass">5</td>
+           <td class="ass">6</td>
+           <td class="ass">7</td>
+           <td class="ass">8</td>
+           <td class="ass">9</td>
+           <td class="ass">10</td>
+           <td class="ass">11</td>
+           <td class="ass">12</td>
+           <td class="ass">13</td>
+           <td class="ass">14</td>
+           <td class="ass">15</td>
+           <td class="ass">16</td>
+           </div>
+           <td class="bord"></td>
+           <td class="bord">E</td>
+         </tr>
+         <tr class="esp"></tr>
+         <tr>
+       </tbody>
+   </table>
+   </div>
+
+   <img class="amarelo" src="http://www.colorcombos.com/images/colors/FFFF00.png">
+   <label class="letras">INTEIRA</label>
+   <label class="letras">R$</label>
+   <input id="valor" type="text" name="">
+   <br>
+   <img class="rosa" src="http://www.colorcombos.com/images/colors/FF1493.png">
+   <label class="letras">MEIA</label>
+   <label class="letras">R$</label>
+   <output class="letras" id="output"name="result"></output>
+   <br>
+   <label class="letras">Resumo do pedido:</label>
+   <br>
+   <div class="inteiras">
+     <output id="inteirat" class="letras">0</output>
+     <label id="entradainteira" class="letras">Entrada inteira</label>
+     <label class="letras">R$</label>
+     <output id="subtotali"class="letras"></output>
+   </div>
+   <div class="meias">
+     <output id="meiat" class="letras">0</output>
+     <label id="entradameia" class="letras">Meia-entrada</label>
+     <label class="letras">R$</label>
+     <output id="subtotalm"class="letras"></output>
+   </div>
+   <label class="letras">Valor total: </label>
+   <output class="letras" id="total" name="result"></output>
+   <script type="text/javascript" src="script.js">
+   </script>
+
+
+ </body>
+</html>
