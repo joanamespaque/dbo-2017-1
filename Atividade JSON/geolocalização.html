@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Geolocalização</title>
+  </head>
+  <body>
+    <script>
+    navigator.geolocation.getCurrentPosition(pos);
+    function pos(parametro) {
+      var lat = parametro.coords.latitude;
+      var lon = parametro.coords.longitude;
+      document.write('<h3>A latitude é: ' + lat + '<br> </h3>');
+      document.write('<h3>A longitude é: ' + lon + '</h3>');
+
+    }
+    </script>
+
+  </body>
+</html>

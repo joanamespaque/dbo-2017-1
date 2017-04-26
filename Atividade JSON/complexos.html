@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Complexos</title>
+  </head>
+  <body>
+    <script>
+    // escrever as funções: Complex, add, subtract, multiply, conjugate e complexToString
+    // obs: Complex inicia em maiúsculo pois é uma função construtora de objetos
+
+    function Complex(a=0,b=0) {
+      var rl = 0;
+      var imag = 0;
+      var string;
+      if(typeof a === "string"){
+        string = a.split('+');
+        if(string.length>=2) {
+            var s1 = string[0];
+            var s2 = string[1];
+            if(s1.indexOf("i") === -1) {
+              rl = parseFloat(s1);
+              imag = s2;
+              imag = parseFloat(imag.replace('i',""));
+            } else {
+              rl = parseFloat(s2);
+              imag = s1;
+              imag = parseFloat(imag.replace('i',""));
+              }
+        } else{
+            if(string[0].indexOf("i")===-1){
+              rl = parseFloat(string[0]);
+              imag = 0;
+            } else {
+                imag = string[0];
+                imag = parseFloat(imag.replace('i',""));
+                rl = 0;
+              }
+          }
+      }
+      else {
+        rl = a;
+        imag = b;
+      }
+      var complexo = {
+        real: rl,
+        imaginary: imag
+      };
+      return complexo;
+    }
+    function add(a,b) {
+      var a1 = a.real;
+      var a2 = a.imaginary;
+      var b1 = b.real;
+      var b2 = b.imaginary;
+      var n1 = a1+b1;
+      var n2 = a2+b2;
+      var complexo = {
+        real: n1,
+        imaginary: n2
+      };
+      return complexo;
+    }
+    function subtract(a,b) {
+      var a1 = a.real;
+      var a2 = a.imaginary;
+      var b1 = b.real;
+      var b2 = b.imaginary;
+      var n1 = a1-b1;
+      var n2 = a2-b2;
+      var complexo = {
+        real: n1,
+        imaginary: n2
+      };
+      return complexo;
+    }
+    function multiply(a,b) {
+      var rl = (a.real * b.real) - (a.imaginary * b.imaginary);
+      var	imag = (a.real * b.imaginary) + (a.imaginary * b.real);
+      var complexo = {
+        real: rl,
+        imaginary: imag
+      };
+      return complexo;
+    }
+    function conjugate(c) {
+      var con = c.imaginary*-1;
+      var complexo = {
+        real: c.real,
+        imaginary: con
+      };
+      return complexo;
+    }
+    function complexToString(c) {
+      var preal = c.real;
+      var pimaginary = c.imaginary;
+      var string;
+      if((preal!==0)&&(pimaginary!==0)){
+        if(pimaginary>0){
+          var preal = preal.toString();
+          var pimaginary = pimaginary.toString();
+          string = preal + "+" + pimaginary + "i";
+        } else{
+          var preal = preal.toString();
+          var pimaginary = pimaginary.toString();
+          string = preal + pimaginary + "i";
+        }
+      } else{
+        if((preal===0)&&(pimaginary!==0)){
+          var pimaginary = pimaginary.toString();
+          string = pimaginary + "i";
+        } else{
+          if((preal!==0)&&(pimaginary===0)){
+            var preal = preal.toString();
+            string = preal;
+          }
+        }
+      }
+      return string;
+    }
+
+    var c1 = {real: 2, imaginary: 3};
+    console.log(c1.real === 2);
+    console.log(c1.imaginary === 3);
+
+    var c2 = Complex('2+3i');
+    console.log(c2.real === 2);
+    console.log(c2.imaginary === 3);
+
+    var c3 = Complex('5');
+    console.log(c3.real === 5);
+    console.log(c3.imaginary === 0);
+
+    var c4 = Complex('4i');
+    console.log(c4.real === 0);
+    console.log(c4.imaginary === 4);
+
+    var c5 = Complex('5 + 4i');
+    console.log(c5.real === 5);
+    console.log(c5.imaginary === 4);
+
+    var c6 = Complex('5.5 + 4.3i');
+    console.log(c6.real === 5.5);
+    console.log(c6.imaginary === 4.3);
+
+    var c7 = Complex(2, 3);
+    console.log(c7.real === 2);
+    console.log(c7.imaginary === 3);
+
+    var c8 = Complex(2);
+    console.log(c8.real === 2);
+    console.log(c8.imaginary === 0);
+
+    var c9 = add(c1, c5); // 2+3i + 5+4i = 7+7i
+    console.log(c9.real === 7);
+    console.log(c9.imaginary === 7);
+
+    var c10 = subtract(c5, c1); // 5+4i - 2+3i = 3+1i
+    console.log(c10.real === 3);
+    console.log(c10.imaginary === 1);
+
+    var c11 = multiply(c1, c9); // 2+3i * 7+7i = 2*7 - 3*7
+    console.log(c11.real === -7);
+    console.log(c11.imaginary === 35);
+
+    var c12 = subtract(c1, c10); // 2+3i - 3+1i = -1+2i
+    console.log(c12.real === -1);
+    console.log(c12.imaginary === 2);
+
+    var c13 = conjugate(c9); // conjugate(7+7i) = 7-7i
+    console.log(c13.real === 7);
+    console.log(c13.imaginary === -7);
+
+    console.log(add(Complex("4+7i"), Complex("5+9i")).real === 9);
+    console.log(add(Complex("4+7i"), Complex("5+9i")).imaginary === 16);
+
+    var c14 = {real: 64, imaginary: 3};
+    var c15 = {real: -3, imaginary: 43};
+    var c16 = {real: 4, imaginary: -14};
+    var c17 = {real: 22, imaginary: 2};
+    var c18 = add(c14,c16);
+    console.log(c18.real === 68);
+    console.log(c18.imaginary === -11);
+    var c19 = add(c17,c15);
+    console.log(c19.real === 19);
+    console.log(c19.imaginary === 45);
+    var c20 = multiply(c15,c16);
+    console.log(c20.real === 590);
+    console.log(c20.imaginary === 214);
+    var c21 = multiply(c14,c18);
+    console.log(c21.real === 4385);
+    console.log(c21.imaginary === -500);
+    var c22 = subtract(c20,c19);
+    console.log(c22.real === 571);
+    console.log(c22.imaginary === 169);
+    var c23 = subtract(c15,c14);
+    console.log(c23.real === -67);
+    console.log(c23.imaginary === 40);
+    var c24 = conjugate(c16);
+    console.log(c24.real === 4);
+    console.log(c24.imaginary === 14);
+    var c25 = conjugate(c18);
+    console.log(c25.real === 68);
+    console.log(c25.imaginary === 11);
+    // adicione mais 2 casos de teste para add, multiply, subtract e conjugate
+
+    var s1 = complexToString(c11);
+    console.log(s1 === "-7+35i");
+    console.log(complexToString(c12) === "-1+2i");
+    console.log(complexToString(c13) === "7-7i");
+    console.log(complexToString(Complex(8)) === "8");
+    console.log(complexToString(Complex(8, 2)) === "8+2i");
+    console.log(complexToString(Complex("8 + 2i")) === "8+2i");
+
+    </script>
+  </body>
+</html>
