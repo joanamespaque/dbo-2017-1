@@ -1,0 +1,229 @@
+body{
+  background-image: url("bg.jpg");
+  background-color: #298963;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center top;
+  max-width: 1366px;
+  margin: 0 auto;
+}
+.centraliza{
+  max-width: 100%;
+  width: 1000px;
+  margin: auto;
+  position: relative;
+}
+.topo{
+  margin: 0 auto;
+  max-width: 100%;
+  display: block;
+  width: 1100px;
+}
+.logo{
+  float: left;
+}
+.topoletras .topoletras1{
+  font-family: 'Paytone One', sans-serif;
+  font-size: 28px;
+  color: #E7E7E7;
+}
+.topoletras .topoletras2{
+  font-family: 'Rosario', sans-serif;
+  font-size: 17px;
+  color: #00BD5E;
+}
+.topoletras{
+  padding: 40px 0;
+}
+div.menured a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  font-family: 'Rosario', sans-serif;
+  font-size: 17px;
+  text-align: center;
+  padding: 10px;
+  width: 105px;
+  height: 22px;
+  float: left;
+  background-image: url("divnavbar.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-color: #a31714;
+}
+.menured{
+  margin-top: : 16px;
+  float: left;
+  display: block;
+  max-width: 100%;
+}
+.pesquisa{
+  float: left;
+  background-color: #a31714;
+  text-align: center;
+  width: 232px;
+  height: 24px;
+  padding: 9px;
+}
+#pesquisar{
+  color: #E7E7E7;
+  background-color: #CB2C25;
+  font-family: 'Rosario', sans-serif;
+  font-size: 13px;
+  outline: none;
+  border: none;
+  width: 160px;
+  height: 22px;
+  float: left;
+  padding-left: 5px;
+}
+.inputimage{
+  width: 20px;
+  height: 20px;
+  float: left;
+  padding-left: 5px;
+}
+.pesquisa_itens{
+  padding-left: 25px;
+}
+.qcinza{
+  max-width: 100%;
+  background-color: #E7E7E7;
+  padding: 30px;
+  width: 620px;
+  float: left;
+  margin-top: 20px;
+}
+.links-a{
+  font-family: 'Rosario', sans-serif;
+  font-size: 14px;
+  color: #999;
+  text-decoration: none;
+  padding: 5px;
+  max-width: 100%;
+}
+.setinha{
+  color: #BB292C;
+  font-size: 10px;
+}
+div.qcinza span hr{
+  max-width: 100%;
+  background-color: transparent;
+  border:1px dashed;
+  color: #CCCCCC;
+}
+.titulo-contatos{
+  font-family: 'Rosario', sans-serif;
+  color: #999;
+  font-size: 23px;
+  line-height: 1.4em;
+}
+.contatos{
+  font-family: 'Rosario', sans-serif;
+  font-size: 14px;
+  color: #333;
+  line-height: 1.5em;
+}
+div.anuncio img{
+  float:right;
+  padding-top: 20px;
+}
+.vejatbm{
+  width: 272px;
+  height: 305px;
+  background-color: #CCCCCC;
+  float: left;
+  float: right;
+  margin-top: 30px;
+}
+.tambem{
+  margin-left: 20px;
+  margin-top: 20px;
+  font-family: 'Rosario', sans-serif;
+  color: #666;
+  font-size: 16px;
+  line-height: 1.4em;
+}
+div.vejatbm hr{
+  color: #999;
+  background-color: #999;
+  height: 1px;
+  border: none;
+}
+.vejatbm a{
+  color: #009966;
+  text-decoration: none;
+}
+.vejatbm a:hover{
+  color: #99cc33;
+}
+.tbmtextos{
+  font-family: 'Rosario', sans-serif;
+  font-size: 14px;
+  width: 236px;
+  height: 71px;
+  padding: 18px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-bottom: 1px dashed #999;
+  color: #333;
+}
+.footer{
+  position: relative;
+  width: 100%;
+  background-color: #666666;
+  float: left;
+  top:60px;
+}
+#patrocinio{
+  font-family: 'Rosario', sans-serif;
+  font-size: 13px;
+  color: #999;
+  float: left;
+  position: absolute;
+  padding-top: 10px;
+  margin-left: 20px;
+}
+.patrocinioimages{
+  margin-top: 0px;
+  float:left;
+  margin-left: 20px;
+}
+.patrocinioimages img{
+  margin-left: 40px;
+  opacity: 0.6;
+  padding-bottom: 10px;
+}
+#apoio{
+  display: block;
+  font-family: 'Rosario', sans-serif;
+  font-size: 13px;
+  color: #999;
+  float: left;
+  margin-left: 20px;
+  margin-top: -21px
+}
+.apoioimage img{
+  margin-left: 40px;
+  opacity: 0.6;
+}
+.footer2{
+  background-color: #999999;
+  width: 100%;
+  max-width: 100%;
+  height: 40px;
+  float: left;
+}
+.footer2text{
+  float: left;
+  position: absolute;
+  font-family: 'Rosario', sans-serif;
+  font-size: 13px;
+  color: #666;
+  margin: auto 0;
+  padding-top: 10px;
+  margin-left: 20px;
+}
+.footer2text img{
+  vertical-align: middle;
+}
