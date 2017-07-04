@@ -1,0 +1,32 @@
+input{
+  border-radius: 4px;
+  width: 90px;
+}
+label, h4{
+  font-family: 'Anton', sans-serif;
+  font-size: 20px;
+}
+.barras{
+  float: left;
+}
+.barra{
+  font-size: 1.2em;
+  min-height: 10px;
+  width: 60px;
+  background-color: purple;
+  text-align: center;
+  vertical-align: middle;
+  font-weight: bold;
+  color: black;
+  transition: width 1s ease-out;
+  margin: 10px;
+}
+.barralado{
+  float: right;
+}
+.nomeBarra{
+  width: 60px;
+  text-align: center;
+  vertical-align: middle;
+  margin-left: 10px;
+}

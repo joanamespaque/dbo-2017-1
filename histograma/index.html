@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="css/estilo.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="addvalores">
+        <label>Valor:</label>
+        <input class="valor" type="number">
+        <button class = "adicionaValor" type="button" name="button">Adicionar</button>
+      </div>
+      <br>
+      <div class="classe">
+        <label>Classe: </label>
+        <input class="deAte" type="text" placeholder="de-até">
+        <label for="">entre</label>
+        <input type="number" class="valorDe">
+        <label for="">e</label>
+        <input type="number" class="valorAte">
+        <button class="adicionaBarra"type="button" name="button">Adicionar</button>
+      </div>
+      <div>
+        <h4>Valores:</h4>
+        <label class="valores"></label>
+      </div>
+      <div>
+        <h4>Mínimo:</h4>
+        <label class="min"></label>
+      </div>
+      <div>
+        <h4>Máximo:</h4>
+        <label class="max"></label>
+      </div>
+      <div>
+        <h4>Amplitude:</h4>
+        <label class="amplitude"></label>
+      </div>
+      <div>
+        <h4>Desvio Padrão:</h4>
+        <label class="desvio"></label>
+      </div>
+      <div class="histograma">
+          <h4>Histograma:</h4>
+          <div class="barras">
+            <div class="barralado">
+              <div class="barra nc"></div>
+              <label class="nomeBarra">&nbsp;&nbsp;N/C</label>
+            </div>
+          </div>
+      </div>
+
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
