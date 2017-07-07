@@ -1,0 +1,51 @@
+input{
+  border-radius: 5px;
+  width: 80px;
+}
+.valores{
+  font-size: 20px;
+}
+button{
+  background: black;
+  color: white;
+  border: none;
+  text-align: center;
+  vertical-align: middle;
+}
+img{
+  width: 20px;
+  height: 20px;
+  margin-left: -5px;
+}
+h2{
+  font-size: 20px;
+  font-family: 'Julius Sans One', sans-serif;
+}
+label{
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+}
+.barras{
+  height: 300px;
+  width: 200px;
+  border-left: solid;
+  border-bottom: solid;
+  float: left;
+}
+.n0{
+  font-family: 'Roboto', sans-serif;
+  padding-top: 290px;
+  padding-left: 10px;
+  float: left;
+}
+.box{
+  background-color: pink;
+  height: 300px;
+}
+.quartisgrafico{
+  width: 100px;
+  height: 300px;
+  margin-left: 50px;
+
+  background-color: red;
+}
